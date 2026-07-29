@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Let's Build The Child Foundation</title>
+  <meta name="description" content="Get in touch with Let's Build The Child Foundation. Have questions about our undergraduate scholarships, WAEC/UTME aid, or partnership opportunities? Contact our team today.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png">
+</head>
+<body>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="home.html" class="brand-logo" aria-label="LBTC Foundation Home">
+        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png" alt="Let's Build The Child Foundation Logo">
+        <div class="brand-text">
+          <span class="brand-name">LET'S BUILD THE CHILD</span>
+          <span class="brand-tagline">FOUNDATION</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link">Scholarship Programs</a>
+        <a href="contact.html" class="nav-link active">Contact Us</a>
+        <a href="programs.html" class="btn btn-primary btn-sm trigger-apply-modal" data-program="General Scholarship">Apply for Scholarship</a>
+      </nav>
+
+      <!-- Mobile Burger Button -->
+      <button class="mobile-toggle" id="mobileNavToggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png" alt="LBTC Logo" style="height: 40px;">
+        <span class="brand-name" style="font-size: 1rem;">LBTC FOUNDATION</span>
+      </div>
+      <button class="drawer-close" id="mobileDrawerClose" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-links">
+      <a href="home.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="programs.html" class="nav-link">Scholarship Programs</a>
+      <a href="contact.html" class="nav-link active">Contact Us</a>
+    </div>
+    <div style="margin-top: auto;">
+      <a href="programs.html" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;" data-program="Mobile General Application">Apply for Scholarship</a>
+    </div>
+  </div>
+
+  <!-- Page Header Banner -->
+  <section style="background: linear-gradient(135deg, var(--neutral-ink) 0%, #15253F 100%); color: var(--bg-white); padding: 80px 0; position: relative;">
+    <div class="container text-center">
+      <span class="section-label label-orange">
+        WE ARE HERE TO HELP
+      </span>
+      <h1 style="color: var(--bg-white); margin-top: 12px; margin-bottom: 16px;">Get in Touch</h1>
+      <p class="lead-text mx-auto" style="color: rgba(255,255,255,0.85); max-width: 760px;">
+        Questions about our scholarships, partnering with us, or anything else — we'd love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section: Direct Info & Working Form -->
+  <section class="section-padding" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Direct Contact Information -->
+        <div class="contact-info-card">
+          <div>
+            <span class="section-label label-orange">DIRECT CHANNELS</span>
+            <h3 style="margin-top: 8px;">Contact Details</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-top: 8px;">
+              Our secretariat is available to assist student applicants, parents, academic institutions, and community leaders.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong style="display: block; font-size: 1rem; color: white;">Contact Addresses</strong>
+                <span style="font-size: 0.9rem; color: rgba(255,255,255,0.8); display: block; margin-bottom: 4px;">• 4, Atanaru Street Uro-Irri, Isoko South L.G.A</span>
+                <span style="font-size: 0.9rem; color: rgba(255,255,255,0.8); display: block;">• 8, Nkem Okwuofu Street GRA Off High Court Road, Asaba</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong style="display: block; font-size: 1rem; color: white;">Email Address</strong>
+                <a href="mailto:info@letsbuildthechild.org" style="color: var(--accent-yellow); font-size: 0.95rem;">info@letsbuildthechild.org</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <strong style="display: block; font-size: 1rem; color: white;">Phone Number</strong>
+                <a href="tel:+2348055543555" style="color: var(--accent-yellow); font-size: 0.95rem;">+234 805 554 3555</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong style="display: block; font-size: 1rem; color: white;">Office Hours</strong>
+                <span style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Monday – Friday: 9:00 AM – 5:00 PM (WAT)</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 20px;">
+            <strong style="display: block; color: white; margin-bottom: 10px; font-size: 0.9rem;">Follow Our Foundation Updates</strong>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-btn" aria-label="X Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Working Front-End Contact Form -->
+        <div class="contact-form-card">
+          <span class="section-label">SEND A MESSAGE</span>
+          <h3 style="margin-top: 8px; margin-bottom: 8px;">How Can We Help You?</h3>
+          <p style="color: var(--neutral-slate); font-size: 0.95rem; margin-bottom: 24px;">
+            Please fill out the form below. We aim to respond to every enquiry within <strong>2–3 business days</strong>.
+          </p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Full Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="e.g. Babatunde Adebayo" required>
+            </div>
+
+            <div class="responsive-2col-grid">
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="e.g. babatunde@gmail.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number *</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. +234 802 345 6789" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Subject / Reason for Contact *</label>
+              <select id="contactSubject" class="form-control" required>
+                <option value="">Select Reason for Contact</option>
+                <option value="Scholarship Enquiry">Scholarship Enquiry (Freshers / Returning)</option>
+                <option value="WAEC/UTME Support">WAEC / UTME Financial Aid Support</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Partnership & Sponsorship">Partnership & Mentorship Opportunity</option>
+                <option value="Media/Press">Media & Press Enquiries</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Your Message *</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Please write your detailed message or enquiry here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive FAQ Accordion Section -->
+  <section class="section-padding" style="background-color: var(--bg-warm);">
+    <div class="container" style="max-width: 860px;">
+      <div class="text-center mx-auto">
+        <span class="section-label label-green">FREQUENTLY ASKED QUESTIONS</span>
+        <h2>Have Questions? We Have Answers.</h2>
+        <p class="lead-text mx-auto" style="margin-top: 12px;">
+          Find quick answers to common questions about eligibility, application processes, and renewals.
+        </p>
+      </div>
+
+      <div class="faq-accordion">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item active">
+          <div class="faq-header">
+            <span>Who is eligible for the LBTC Freshers Scholarship?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            The Freshers Scholarship is open to newly admitted 100L or ND1 students in accredited public universities or polytechnics in Nigeria. Applicants must have achieved at least 5 credits in WAEC or NECO in a single sitting (including Mathematics and English), demonstrate financial need, and show strong community character.
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>What CGPA is required for Returning Student Renewals?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            Continuing undergraduate scholars must maintain a minimum Cumulative Grade Point Average (CGPA) of 3.50 out of 5.00 (or equivalent) to remain eligible for annual renewal, alongside good conduct and participation in mentorship sessions.
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>Are students in private universities eligible to apply?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            Currently, our scholarship endowment is specifically dedicated to supporting bonafide students enrolled in public tertiary institutions (Federal and State Universities/Polytechnics) across Nigeria to maximize support for underprivileged families.
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>Is there any application or processing fee?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            No! Application to all Let's Build The Child Foundation programs is <strong>100% free of charge</strong>. The foundation will never ask applicants for money at any stage of the application or award process.
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>How will I know if my application is selected?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-body">
+            Shortlisted candidates are notified directly via their provided email address and phone number for document verification and interview scheduling. Official announcements are also published on our website and official communications.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png" alt="LBTC Foundation Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
+            <div class="brand-text">
+              <span class="brand-name" style="color: white;">LET'S BUILD THE CHILD</span>
+              <span class="brand-tagline" style="color: var(--primary-orange);">FOUNDATION</span>
+            </div>
+          </div>
+          <p>
+            A visionary non-profit foundation established by Sir Itiako & Lady Peikumor Ikpokpo, KSM, committed to raising healthy, educated, empowered, and responsible leaders.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="X Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Scholarship Programs</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <div class="footer-links">
+            <a href="programs.html#freshers-program">Freshers Scholarship</a>
+            <a href="programs.html#returning-program">Returning Students Renewal</a>
+            <a href="programs.html#utme-program">UTME Financial Aid</a>
+            <a href="about.html#core-values">Character Development</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Subscribe to Newsletter</h4>
+          <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 12px; line-height: 1.5;">
+            Subscribe to receive immediate alerts on scholarship application windows and impact reports.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to LBTC Foundation updates!'); this.reset();">
+            <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary" aria-label="Submit newsletter subscription"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div style="margin-top: 16px; font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.6;">
+            <i class="fas fa-map-marker-alt" style="color: var(--primary-orange); margin-right: 6px;"></i> 4, Atanaru Street Uro-Irri, Isoko South L.G.A & 8, Nkem Okwuofu Street GRA Off High Court Road, Asaba<br>
+            <i class="fas fa-phone-alt" style="color: var(--primary-orange); margin-right: 6px;"></i> <a href="tel:+2348055543555" style="color: white; text-decoration: underline;">+234 805 554 3555</a><br>
+            <i class="fas fa-envelope" style="color: var(--primary-orange); margin-right: 6px;"></i> <a href="mailto:info@letsbuildthechild.org" style="color: white; text-decoration: underline;">info@letsbuildthechild.org</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Let's Build The Child Foundation. All Rights Reserved.</div>
+        <div>Nurturing Character • Empowering Academics • Building Leaders</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Modal Popup -->
+  <div class="modal-backdrop" id="applicationModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div style="margin-bottom: 24px;">
+        <span class="section-label">SCHOLARSHIP APPLICATION</span>
+        <h3 id="modalProgramTitle">General Scholarship Application</h3>
+        <p style="color: var(--neutral-slate); font-size: 0.9rem; margin-top: 4px;">
+          Please complete your preliminary information. High academic standing & verified financial need are required.
+        </p>
+      </div>
+
+      <form id="modalApplicationForm">
+        <div class="form-group">
+          <label class="form-label" for="modalFullName">Full Name (Surname First)</label>
+          <input type="text" id="modalFullName" class="form-control" placeholder="e.g. Okonjo Chidubem David" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalEmail">Email Address</label>
+          <input type="email" id="modalEmail" class="form-control" placeholder="e.g. chidubem@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalPhone">Phone Number (WhatsApp Preferred)</label>
+          <input type="tel" id="modalPhone" class="form-control" placeholder="e.g. +234 803 123 4567" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalProgramSelect">Scholarship Pathway</label>
+          <select id="modalProgramSelect" class="form-control" required>
+            <option value="">Select Scholarship Program</option>
+            <option value="Freshers">Freshers Scholarship (Newly Admitted)</option>
+            <option value="Returning">Returning Students Renewal (CGPA >= 3.50)</option>
+            <option value="UTME">UTME Financial Aid</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalInstitution">Institution Name</label>
+          <input type="text" id="modalInstitution" class="form-control" placeholder="e.g. University of Lagos (UNILAG) / DELSU" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalStatement">Brief Statement of Need & Merit (100–200 words)</label>
+          <textarea id="modalStatement" class="form-control" style="min-height: 100px;" placeholder="Tell us about your academic goals and financial background..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>

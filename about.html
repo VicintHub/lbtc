@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Let's Build The Child Foundation</title>
+  <meta name="description"
+    content="Learn about Let's Build The Child Foundation, founded by Sir Itiako and Lady Peikumor Ikpokpo, KSM. Discover our mission, vision, core values, ₦10M annual endowment, and our board of trustees.">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png"
+    href="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png">
+</head>
+
+<body>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="home.html" class="brand-logo" aria-label="LBTC Foundation Home">
+        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png"
+          alt="Let's Build The Child Foundation Logo">
+        <div class="brand-text">
+          <span class="brand-name">LET'S BUILD THE CHILD</span>
+          <span class="brand-tagline">FOUNDATION</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="programs.html" class="nav-link">Scholarship Programs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="programs.html" class="btn btn-primary btn-sm trigger-apply-modal"
+          data-program="General Scholarship">Apply for Scholarship</a>
+      </nav>
+
+      <!-- Mobile Burger Button -->
+      <button class="mobile-toggle" id="mobileNavToggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png"
+          alt="LBTC Logo" style="height: 40px;">
+        <span class="brand-name" style="font-size: 1rem;">LBTC FOUNDATION</span>
+      </div>
+      <button class="drawer-close" id="mobileDrawerClose" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-links">
+      <a href="home.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About Us</a>
+      <a href="programs.html" class="nav-link">Scholarship Programs</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+    </div>
+    <div style="margin-top: auto;">
+      <a href="programs.html" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;"
+        data-program="Mobile General Application">Apply for Scholarship</a>
+    </div>
+  </div>
+
+  <!-- Page Header Banner / Hero (Redesigned per Reference Image) -->
+  <section class="about-hero-section"
+    style="background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.86)), url('https://res.cloudinary.com/pwkdspnn/image/upload/v1785310045/nnnn_ox7zo8.jpg') center/cover no-repeat;">
+    <div class="container">
+      <div class="about-hero-content">
+        <span class="section-label label-orange" style="letter-spacing: 0.16em;">GIVE THEM A CHANCE</span>
+        <h1 class="about-hero-title">Give The Child The Gift Of Education.</h1>
+        <p class="about-hero-lead">
+          Equal opportunities for every gifted, underprivileged Nigerian student to thrive in public tertiary
+          institutions through full scholarships and character mentorship.
+        </p>
+        <div class="about-hero-action">
+          <a href="#leadership-team" class="btn btn-primary"
+            style="padding: 14px 28px; border-radius: var(--radius-pill); font-weight: 700;">
+            Meet Our Team
+          </a>
+          <div class="team-avatar-stack">
+            <div class="avatar-group">
+              <img
+                src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785142930/PHOTO-2026-07-26-13-12-46_azobm5.jpg"
+                alt="Lady Peikumor Ikpokpo (Founder)" title="Lady Peikumor Ikpokpo (Founder)">
+              <img
+                src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-13-24_omignx.jpg"
+                alt="Sir Itiako Ikpokpo, KSM (Co-Founder)" title="Sir Itiako Ikpokpo, KSM (Co-Founder)">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80"
+                alt="Board Member" title="Board Leadership">
+            </div>
+            <span class="avatar-stack-label">+ Leadership Board</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Story Narrative -->
+  <section class="section-padding" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="story-layout-grid">
+        <div>
+          <span class="section-label">OUR ORIGIN & PHILOSOPHY</span>
+          <h2 style="margin-bottom: 24px;">Laying the Foundation for a Prosperous Tomorrow</h2>
+          <p style="color: var(--neutral-slate); font-size: 1.075rem; line-height: 1.75; margin-bottom: 20px;">
+            <strong>LET'S BUILD THE CHILD FOUNDATION</strong> was established to address a persistent, heartbreaking
+            reality across Nigeria: brilliant, hardworking children who possess academic potential, strong character,
+            and a genuine desire to serve humanity, yet are constrained by severe economic hardship.
+          </p>
+          <p style="color: var(--neutral-slate); font-size: 1.075rem; line-height: 1.75; margin-bottom: 24px;">
+            We believe that every child with talent and determination deserves the chance to thrive. Our focus is on
+            identifying these promising young individuals early, providing them with full financial support, leadership
+            mentorship, and character formation so they can emerge as ethical leaders and agents of positive societal
+            change.
+          </p>
+
+          <div style="border-left: 4px solid var(--primary-blue); padding-left: 20px; margin-top: 28px;">
+            <h4 style="color: var(--neutral-ink); margin-bottom: 6px;">The ₦10,000,000.00 Annual Endowment</h4>
+            <p style="color: var(--neutral-slate); font-size: 0.95rem;">
+              To advance this initiative with institutional strength, the Foundation has committed a <strong>Ten Million
+                Naira annual endowment</strong> for its first five years, providing guaranteed, sustainable support for
+              all program beneficiaries.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785308970/about_us_image_mqfhqe.png"
+            alt="Let's Build The Child Foundation Scholars" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Vision & Mission Section -->
+  <section class="section-padding" style="background-color: var(--bg-warm);">
+    <div class="container">
+      <div class="story-layout-grid">
+        <div
+          style="background: var(--bg-white); padding: 48px; border-radius: var(--radius-lg); border: 1px solid var(--neutral-border);">
+          <span class="section-label">OUR VISION</span>
+          <h3 style="margin-top: 12px; margin-bottom: 16px; font-size: 1.8rem;">To Build a Future Where No Gifted Child
+            is Denied Growth</h3>
+          <p style="color: var(--neutral-slate); font-size: 1.05rem; line-height: 1.7;">
+            To raise healthy, educated, empowered, and responsible children by providing equal opportunities for growth
+            regardless of their socioeconomic background—laying the foundation for stronger families, healthier
+            communities, and a prosperous nation.
+          </p>
+        </div>
+
+        <div
+          style="background: var(--bg-white); padding: 48px; border-radius: var(--radius-lg); border: 1px solid var(--neutral-border);">
+          <span class="section-label label-orange">OUR MISSION</span>
+          <h3 style="margin-top: 12px; margin-bottom: 16px; font-size: 1.8rem;">Holistic Empowerment Through Education &
+            Values</h3>
+          <p style="color: var(--neutral-slate); font-size: 1.05rem; line-height: 1.7;">
+            To improve the lives of children through character development, education, healthcare, life skills
+            acquisition, empowerment, and opportunity creation across public tertiary institutions and local communities
+            in Nigeria.
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div id="core-values" style="margin-top: 64px;">
+        <div class="text-center" style="margin-bottom: 40px;">
+          <span class="section-label label-green">WHAT DEFINES US</span>
+          <h2>Our 7 Core Values</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+          <div
+            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+            <i class="fas fa-heart" style="font-size: 1.75rem; color: #E11D48; margin-bottom: 12px;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Love</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Unconditional care & empathy</span>
+          </div>
+
+          <div
+            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+            <i class="fas fa-shield-alt"
+              style="font-size: 1.75rem; color: var(--primary-blue); margin-bottom: 12px;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Integrity</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Uncompromising ethical standards</span>
+          </div>
+
+          <div
+            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+            <i class="fas fa-star" style="font-size: 1.75rem; color: var(--primary-orange); margin-bottom: 12px;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Excellence</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Peak academic & moral rigor</span>
+          </div>
+
+          <div
+            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+            <i class="fas fa-hands-helping"
+              style="font-size: 1.75rem; color: var(--secondary-green-dark); margin-bottom: 12px;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Compassion</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Serving vulnerable youth</span>
+          </div>
+
+          <div
+            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+            <i class="fas fa-balance-scale" style="font-size: 1.75rem; color: #7C3AED; margin-bottom: 12px;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Accountability</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Transparent stewardship</span>
+          </div>
+
+          <div
+            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+            <i class="fas fa-bullseye" style="font-size: 1.75rem; color: #2563EB; margin-bottom: 12px;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Intentionality</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Purpose-driven mentoring</span>
+          </div>
+
+          <div
+            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+            <i class="fas fa-users" style="font-size: 1.75rem; color: #D97706; margin-bottom: 12px;"></i>
+            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Inclusion</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Equal access for every background</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founders Spotlight -->
+  <section class="section-padding" id="leadership-team" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 760px; margin-bottom: 48px;">
+        <span class="section-label">THE FOUNDERS</span>
+        <h2>Guided by Leadership & Community Vision</h2>
+      </div>
+
+      <div class="story-layout-grid">
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785142930/PHOTO-2026-07-26-13-12-46_azobm5.jpg"
+            alt="Lady Peikumor Ikpokpo, KSM"
+            style="border-radius: var(--radius-md); height: 380px; width: 100%; object-fit: cover; object-position: center 20%;">
+          <div>
+            <span
+              style="color: var(--primary-blue); font-weight: 800; font-size: 0.85rem; text-transform: uppercase;">Founder
+              & President</span>
+            <h3>Lady Peikumor Ikpokpo, KSM</h3>
+            <p style="color: var(--neutral-slate); font-size: 0.975rem; margin-top: 8px;">
+              A passionate advocate for child development, character education, and empowerment who leads the
+              Foundation's strategic pillars with a focus on holistic mentorship and practical life skills training.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-13-24_omignx.jpg"
+            alt="Sir Itiako Ikpokpo, KSM"
+            style="border-radius: var(--radius-md); height: 380px; width: 100%; object-fit: cover; object-position: center 20%;">
+          <div>
+            <span
+              style="color: var(--primary-blue); font-weight: 800; font-size: 0.85rem; text-transform: uppercase;">Co-Founder
+              & Chairman</span>
+            <h3>Sir Itiako Ikpokpo, KSM</h3>
+            <p style="color: var(--neutral-slate); font-size: 0.975rem; margin-top: 8px;">
+              A distinguished leader and community philanthropist dedicated to creating structural pathways for youth
+              empowerment, public leadership, and academic opportunity across Delta State and Nigeria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Board of Trustees & Executive Team -->
+  <section class="section-padding" id="board-team" style="background-color: var(--bg-sky);">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 760px; margin-bottom: 48px;">
+        <span class="section-label label-orange">THE PEOPLE BEHIND THE FOUNDATION</span>
+        <h2>Board of Trustees & Executive Team</h2>
+        <p class="lead-text mx-auto" style="margin-top: 12px;">
+          Providing transparent governance, strategic direction, and program oversight.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+        <!-- Member 1 -->
+        <div
+          style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785142930/PHOTO-2026-07-26-13-12-46_azobm5.jpg"
+            alt="Lady Peikumor Ikpokpo, KSM"
+            style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
+          <div style="padding: 20px;">
+            <h4>Lady Peikumor Ikpokpo, KSM</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate); font-weight: 700;">Founder &
+              President</span>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div
+          style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-13-24_omignx.jpg"
+            alt="Sir Itiako Ikpokpo, KSM"
+            style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
+          <div style="padding: 20px;">
+            <h4>Sir Itiako Ikpokpo, KSM</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate); font-weight: 700;">Co-Founder &
+              Chairman</span>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div
+          style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-43-55_x4ocij.jpg"
+            alt="Yole Itiako-Ikpokpo"
+            style="width: 100%; height: 280px; object-fit: cover; object-position: center 30%;">
+          <div style="padding: 20px;">
+            <h4>Yole Itiako-Ikpokpo</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate); font-weight: 700;">Member, Board of
+              Trustees</span>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div
+          style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-14-27_d341sy.jpg"
+            alt="Uteno Young" style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
+          <div style="padding: 20px;">
+            <h4>Uteno Young</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate); font-weight: 700;">Programs Coordinator</span>
+          </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div
+          style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141323/PHOTO-2026-07-26-13-24-46_h7swgu.jpg"
+            alt="Mrs Ajiri Obi" style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
+          <div style="padding: 20px;">
+            <h4>Mrs Ajiri Obi</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate); font-weight: 700;">Member, Board of
+              Trustees</span>
+          </div>
+        </div>
+
+        <!-- Member 6 -->
+        <div
+          style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
+          <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-15-06_grncxy.jpg"
+            alt="Darlington Ofekeze"
+            style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
+          <div style="padding: 20px;">
+            <h4>Darlington Ofekeze</h4>
+            <span style="font-size: 0.85rem; color: var(--neutral-slate); font-weight: 700;">Member, Board of
+              Trustees</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="endowment-banner-section">
+    <div class="container text-center">
+      <div class="endowment-badge">GET THE SUPPORT YOU NEED</div>
+      <h2>Your Future Shouldn't Wait on Your Finances</h2>
+      <p>
+        If you have the grades, the drive, and the dream; we're here to help you get there. Applications for our
+        scholarship and financial aid programmes are open now.
+      </p>
+      <a href="programs.html" class="btn btn-primary">
+        Apply for Scholarship <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png"
+              alt="LBTC Foundation Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
+            <div class="brand-text">
+              <span class="brand-name" style="color: white;">LET'S BUILD THE CHILD</span>
+              <span class="brand-tagline" style="color: var(--primary-orange);">FOUNDATION</span>
+            </div>
+          </div>
+          <p>
+            A visionary non-profit foundation established by Sir Itiako & Lady Peikumor Ikpokpo, KSM, committed to
+            raising healthy, educated, empowered, and responsible leaders.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="X Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Scholarship Programs</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <div class="footer-links">
+            <a href="programs.html#freshers-program">Freshers Scholarship</a>
+            <a href="programs.html#returning-program">Returning Students Renewal</a>
+            <a href="programs.html#utme-program">UTME Financial Aid</a>
+            <a href="about.html#core-values">Character Development</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Subscribe to Newsletter</h4>
+          <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 12px; line-height: 1.5;">
+            Subscribe to receive immediate alerts on scholarship application windows and impact reports.
+          </p>
+          <form class="footer-newsletter-form"
+            onsubmit="event.preventDefault(); alert('Thank you for subscribing to LBTC Foundation updates!'); this.reset();">
+            <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary" aria-label="Submit newsletter subscription"><i
+                class="fas fa-paper-plane"></i></button>
+          </form>
+          <div style="margin-top: 16px; font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.6;">
+            <i class="fas fa-map-marker-alt" style="color: var(--primary-orange); margin-right: 6px;"></i> 4, Atanaru
+            Street Uro-Irri, Isoko South L.G.A & 8, Nkem Okwuofu Street GRA Off High Court Road, Asaba<br>
+            <i class="fas fa-phone-alt" style="color: var(--primary-orange); margin-right: 6px;"></i> <a
+              href="tel:+2348055543555" style="color: white; text-decoration: underline;">+234 805 554 3555</a><br>
+            <i class="fas fa-envelope" style="color: var(--primary-orange); margin-right: 6px;"></i> <a
+              href="mailto:info@letsbuildthechild.org"
+              style="color: white; text-decoration: underline;">info@letsbuildthechild.org</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Let's Build The Child Foundation. All Rights Reserved.</div>
+        <div>Nurturing Character • Empowering Academics • Building Leaders</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

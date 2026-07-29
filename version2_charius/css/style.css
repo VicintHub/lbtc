@@ -1,0 +1,99 @@
+/* VERSION 2: CHARIUS LAYOUT STYLESHEET */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Outfit:wght@600;800;900&display=swap');
+
+:root {
+  --primary-blue: #1D5FD6;
+  --primary-orange: #F5A623;
+  --secondary-green: #2ECC71;
+  --neutral-ink: #16233B;
+  --neutral-slate: #5B6B84;
+  --bg-warm: #FBF9F5;
+  --bg-sky: #EAF3FC;
+  --bg-white: #FFFFFF;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 9999px;
+  --font-heading: 'Hagrid', 'Outfit', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); color: var(--neutral-ink); background: var(--bg-white); line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section-padding { padding: 90px 0; }
+.text-center { text-align: center; }
+
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 800; line-height: 1.2; }
+h1 { font-size: clamp(2.5rem, 5.5vw, 4.2rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 32px; border-radius: var(--radius-pill); font-weight: 800; cursor: pointer; transition: all 0.3s ease; border: none; }
+.btn-orange { background: var(--primary-orange); color: var(--neutral-ink); }
+.btn-orange:hover { background: #E09214; transform: translateY(-2px); }
+.btn-blue { background: var(--primary-blue); color: white; }
+.btn-blue:hover { background: #1248AA; transform: translateY(-2px); }
+
+/* Header & Dark Hero */
+.charius-header { background: var(--neutral-ink); color: white; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.header-flex { display: flex; align-items: center; justify-content: space-between; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo img { height: 48px; background: white; border-radius: 8px; padding: 4px; }
+.nav-links { display: flex; gap: 28px; font-weight: 700; color: rgba(255,255,255,0.85); }
+.nav-links a.active { color: var(--primary-orange); }
+
+.charius-hero { background: linear-gradient(rgba(22,35,59,0.85), rgba(22,35,59,0.92)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; color: white; padding: 140px 0 100px; text-align: left; }
+.hero-content { max-width: 680px; }
+.avatar-group { display: flex; align-items: center; gap: 12px; margin-top: 24px; }
+.avatar-group img { width: 44px; height: 44px; border-radius: 50%; border: 2px solid white; object-fit: cover; }
+
+/* 3-Pill Diagonal Image Mask Section */
+.sliced-mask-section { padding: 100px 0; background: var(--bg-warm); }
+.mask-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.mask-pill-container { display: flex; gap: 16px; justify-content: center; transform: rotate(-8deg); }
+.mask-pill-column { width: 140px; height: 440px; border-radius: 100px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border: 4px solid white; }
+.mask-pill-column img { width: 100%; height: 100%; object-fit: cover; }
+.mask-pill-column:nth-child(2) { transform: translateY(-30px); }
+
+/* Stats Bar */
+.charius-stats { padding: 60px 0; background: white; border-bottom: 1px solid var(--bg-sky); }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+.stat-item .num { font-family: var(--font-heading); font-size: 2.8rem; font-weight: 900; color: var(--neutral-ink); }
+
+/* Cause Cards with Progress Bar */
+.cause-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 48px; }
+.cause-card { background: white; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(22,35,59,0.08); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.cause-img { height: 240px; overflow: hidden; }
+.cause-img img { width: 100%; height: 100%; object-fit: cover; }
+.cause-body { padding: 28px; }
+.progress-bar-bg { background: #E2E8F0; height: 10px; border-radius: 5px; overflow: hidden; margin: 16px 0 12px; }
+.progress-bar-fill { background: var(--primary-orange); height: 100%; width: 100%; border-radius: 5px; }
+
+/* Photo Gallery Grid */
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
+.gallery-item { height: 200px; border-radius: var(--radius-md); overflow: hidden; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.gallery-item:hover img { transform: scale(1.06); }
+
+/* Testimonial Cards */
+.quote-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
+.quote-card { background: white; border-radius: var(--radius-lg); padding: 36px 28px; border: 1px solid var(--bg-sky); box-shadow: 0 8px 24px rgba(0,0,0,0.04); position: relative; }
+.quote-badge { width: 44px; height: 44px; border-radius: 50%; background: var(--primary-orange); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 20px; }
+
+/* Upcoming Events Cards */
+.events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
+.event-card { background: white; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(22,35,59,0.08); box-shadow: 0 8px 24px rgba(0,0,0,0.04); position: relative; }
+.event-img { height: 220px; overflow: hidden; position: relative; }
+.event-img img { width: 100%; height: 100%; object-fit: cover; }
+.event-date-pill { position: absolute; top: 16px; right: 16px; background: var(--primary-blue); color: white; padding: 8px 16px; border-radius: var(--radius-pill); font-weight: 800; font-size: 0.85rem; }
+
+/* Footer */
+.charius-footer { background: var(--neutral-ink); color: rgba(255,255,255,0.75); padding: 80px 0 30px; border-top: 4px solid var(--primary-orange); }
+
+@media (max-width: 900px) {
+  .mask-grid, .cause-grid, .gallery-grid, .quote-grid, .events-grid, .stats-grid { grid-template-columns: 1fr; }
+  .mask-pill-container { transform: none; flex-direction: column; }
+  .mask-pill-column { width: 100%; height: 200px; border-radius: 20px; }
+  .mask-pill-column:nth-child(2) { transform: none; }
+}

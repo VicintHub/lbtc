@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarships & Support Programmes | Let's Build The Child Foundation</title>
+  <meta name="description" content="Explore our undergraduate scholarship pathways for Nigerian public university students: Freshers Scholarship, Returning Students Renewal, and UTME Financial Aid. View eligibility and document checklists.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png">
+</head>
+<body>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="home.html" class="brand-logo" aria-label="LBTC Foundation Home">
+        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png" alt="Let's Build The Child Foundation Logo">
+        <div class="brand-text">
+          <span class="brand-name">LET'S BUILD THE CHILD</span>
+          <span class="brand-tagline">FOUNDATION</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link active">Scholarship Programs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="programs.html" class="btn btn-primary btn-sm trigger-apply-modal" data-program="General Scholarship">Apply for Scholarship</a>
+      </nav>
+
+      <!-- Mobile Burger Button -->
+      <button class="mobile-toggle" id="mobileNavToggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png" alt="LBTC Logo" style="height: 40px;">
+        <span class="brand-name" style="font-size: 1rem;">LBTC FOUNDATION</span>
+      </div>
+      <button class="drawer-close" id="mobileDrawerClose" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-links">
+      <a href="home.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="programs.html" class="nav-link active">Scholarship Programs</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+    </div>
+    <div style="margin-top: auto;">
+      <a href="programs.html" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;" data-program="Mobile General Application">Apply for Scholarship</a>
+    </div>
+  </div>
+
+  <!-- Page Header Banner -->
+  <section style="background: linear-gradient(135deg, var(--neutral-ink) 0%, #172A46 100%); color: var(--bg-white); padding: 80px 0; position: relative;">
+    <div class="container text-center">
+      <span class="section-label label-orange">
+        EDUCATIONAL PATHWAYS
+      </span>
+      <h1 style="color: var(--bg-white); margin-top: 12px; margin-bottom: 16px;">Scholarships & Support Programmes</h1>
+      <p class="lead-text mx-auto" style="color: rgba(255,255,255,0.85); max-width: 760px;">
+        Three structured pathways helping ambitious Nigerian students access, continue, and complete their tertiary education.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROGRAM 1: FRESHERS SCHOLARSHIP -->
+  <section class="section-padding" id="freshers-program" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="program-card-box">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+          <div>
+            <span class="section-label" style="margin-bottom: 8px;">PATHWAY 1 • NEWLY ADMITTED</span>
+            <h2>Freshers Scholarship</h2>
+          </div>
+          <span style="background: var(--bg-peach); color: #D97706; padding: 8px 18px; border-radius: var(--radius-pill); font-weight: 800; font-size: 0.85rem;">
+            <i class="fas fa-clock"></i> Current Cycle Deadline: Sept 30th
+          </span>
+        </div>
+
+        <p style="color: var(--neutral-slate); font-size: 1.075rem; margin-bottom: 32px; max-width: 840px;">
+          For candidates who have recently secured admission into an accredited public Nigerian university or polytechnic and need financial support to begin their academic journey without delay.
+        </p>
+
+        <div class="program-details-grid">
+          <div style="background: var(--bg-white); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+            <h4 style="margin-bottom: 16px; color: var(--primary-blue);"><i class="fas fa-check-circle"></i> Eligibility Criteria</h4>
+            <ul style="display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem; color: var(--neutral-slate);">
+              <li>• Admitted into a public tertiary institution (University or Polytechnic) in Nigeria.</li>
+              <li>• Verified financial need & community attestation.</li>
+              <li>• Minimum 5 credits in WAEC/NECO (including Maths & English) in <strong>one sitting</strong>.</li>
+              <li>• Age between 16 and 25 years.</li>
+              <li>• Commitment to leadership & character development workshops.</li>
+            </ul>
+          </div>
+
+          <div style="background: var(--bg-white); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+            <h4 style="margin-bottom: 16px; color: var(--primary-blue);"><i class="fas fa-file-alt"></i> Required Documents</h4>
+            <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--neutral-slate);">
+              <li>1. Tertiary Institution Admission Letter</li>
+              <li>2. Official JAMB Result Slip</li>
+              <li>3. O'Level WAEC/NECO Result (1 Sitting)</li>
+              <li>4. Birth Certificate / Age Declaration</li>
+              <li>5. Local Government Area (LGA) Identification</li>
+              <li>6. Two Recommendation Letters (Principal / Community Leader)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="#" class="btn btn-primary trigger-apply-modal" data-program="Freshers Scholarship">
+            Apply Now for Freshers Scholarship <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM 2: RETURNING STUDENTS SCHOLARSHIP -->
+  <section class="section-padding" id="returning-program" style="background-color: var(--bg-warm);">
+    <div class="container">
+      <div class="program-card-box" style="background: var(--bg-white);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+          <div>
+            <span class="section-label label-orange" style="margin-bottom: 8px;">PATHWAY 2 • CONTINUING STUDENTS</span>
+            <h2>Returning Students Renewal</h2>
+          </div>
+          <span style="background: var(--bg-sky); color: var(--primary-blue); padding: 8px 18px; border-radius: var(--radius-pill); font-weight: 800; font-size: 0.85rem;">
+            <i class="fas fa-sync-alt"></i> Annual Renewal Window
+          </span>
+        </div>
+
+        <p style="color: var(--neutral-slate); font-size: 1.075rem; margin-bottom: 32px; max-width: 840px;">
+          For continuing undergraduate students who have completed at least one academic session and wish to sustain their scholarship by maintaining academic excellence.
+        </p>
+
+        <div class="program-details-grid">
+          <div style="background: var(--bg-warm); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+            <h4 style="margin-bottom: 16px; color: var(--primary-orange);"><i class="fas fa-user-check"></i> Eligibility Criteria</h4>
+            <ul style="display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem; color: var(--neutral-slate);">
+              <li>• Enrolled full-time in an accredited public tertiary institution.</li>
+              <li>• Completed at least one (1) full academic session.</li>
+              <li>• Minimum Cumulative Grade Point Average (CGPA) of <strong>3.50 / 5.00</strong>.</li>
+              <li>• Clean disciplinary record & exemplary conduct.</li>
+            </ul>
+          </div>
+
+          <div style="background: var(--bg-warm); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+            <h4 style="margin-bottom: 16px; color: var(--secondary-green-dark);"><i class="fas fa-award"></i> Conditions for Renewal</h4>
+            <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--neutral-slate);">
+              <li>• Maintain the required minimum 3.50 CGPA.</li>
+              <li>• Pass all registered course units each semester.</li>
+              <li>• Prompt submission of official academic transcripts.</li>
+              <li>• Active participation in Foundation mentorship engagements.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="#" class="btn btn-blue trigger-apply-modal" data-program="Returning Students Renewal">
+            Apply / Renew Returning Scholarship <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM 3: UTME FINANCIAL AID -->
+  <section class="section-padding" id="utme-program" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="program-card-box">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+          <div>
+            <span class="section-label label-green" style="margin-bottom: 8px;">PATHWAY 3 • ENTRANCE EXAM AID</span>
+            <h2>UTME Financial Aid</h2>
+          </div>
+          <span style="background: var(--bg-mint); color: var(--secondary-green-dark); padding: 8px 18px; border-radius: var(--radius-pill); font-weight: 800; font-size: 0.85rem;">
+            <i class="fas fa-edit"></i> Registration Grant Window
+          </span>
+        </div>
+
+        <p style="color: var(--neutral-slate); font-size: 1.075rem; margin-bottom: 32px; max-width: 840px;">
+          Direct financial relief for promising secondary school graduates preparing for UTME / JAMB matriculation examinations who face fee registration roadblocks.
+        </p>
+
+        <div class="program-details-grid">
+          <div style="background: var(--bg-white); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+            <h4 style="margin-bottom: 16px;"><i class="fas fa-check" style="color: var(--secondary-green-dark);"></i> Eligibility Criteria</h4>
+            <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--neutral-slate);">
+              <li>• Secondary school graduate with strong academic standing.</li>
+              <li>• Verified financial constraint preventing JAMB fee payment.</li>
+              <li>• Attestation letter from Secondary School Principal.</li>
+            </ul>
+          </div>
+
+          <div style="background: var(--bg-white); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+            <h4 style="margin-bottom: 16px;"><i class="fas fa-folder-open" style="color: var(--primary-blue);"></i> Required Entry Documents</h4>
+            <ul style="display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--neutral-slate);">
+              <li>• O'Level WAEC/NECO Statement of Result</li>
+              <li>• Birth Certificate or LGA Identification</li>
+              <li>• Principal Recommendation Letter</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="#" class="btn btn-primary trigger-apply-modal" data-program="UTME Financial Aid">
+            Apply for UTME Financial Aid <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Step-by-Step Selection Process -->
+  <section class="section-padding" style="background-color: var(--bg-sky);">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 760px; margin-bottom: 48px;">
+        <span class="section-label">TRANSPARENT WORKFLOW</span>
+        <h2>How We Review & Award Scholarships</h2>
+        <p class="lead-text mx-auto" style="margin-top: 12px;">
+          Our 4-stage selection workflow ensures complete integrity, objectivity, and merit-driven awarding.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-blue); color: white; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.25rem; margin: 0 auto 16px;">1</div>
+          <h4>Application Submission</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); margin-top: 8px;">Submit complete application form and credentials before deadline.</p>
+        </div>
+
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--primary-orange); color: white; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.25rem; margin: 0 auto 16px;">2</div>
+          <h4>Document Verification</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); margin-top: 8px;">Verification of WAEC/NECO/JAMB results and financial need attestations.</p>
+        </div>
+
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--secondary-green-dark); color: white; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.25rem; margin: 0 auto 16px;">3</div>
+          <h4>Shortlist & Interview</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); margin-top: 8px;">Shortlisted candidates participate in a panel interview evaluating character and vision.</p>
+        </div>
+
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--neutral-ink); color: white; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.25rem; margin: 0 auto 16px;">4</div>
+          <h4>Award & Mentorship</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); margin-top: 8px;">Scholars receive tuition funding and are paired with executive mentors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png" alt="LBTC Foundation Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
+            <div class="brand-text">
+              <span class="brand-name" style="color: white;">LET'S BUILD THE CHILD</span>
+              <span class="brand-tagline" style="color: var(--primary-orange);">FOUNDATION</span>
+            </div>
+          </div>
+          <p>
+            A visionary non-profit foundation established by Sir Itiako & Lady Peikumor Ikpokpo, KSM, committed to raising healthy, educated, empowered, and responsible leaders.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="X Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Scholarship Programs</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <div class="footer-links">
+            <a href="programs.html#freshers-program">Freshers Scholarship</a>
+            <a href="programs.html#returning-program">Returning Students Renewal</a>
+            <a href="programs.html#utme-program">UTME Financial Aid</a>
+            <a href="about.html#core-values">Character Development</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Subscribe to Newsletter</h4>
+          <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 12px; line-height: 1.5;">
+            Subscribe to receive immediate alerts on scholarship application windows and impact reports.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to LBTC Foundation updates!'); this.reset();">
+            <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary" aria-label="Submit newsletter subscription"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div style="margin-top: 16px; font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.6;">
+            <i class="fas fa-map-marker-alt" style="color: var(--primary-orange); margin-right: 6px;"></i> 4, Atanaru Street Uro-Irri, Isoko South L.G.A & 8, Nkem Okwuofu Street GRA Off High Court Road, Asaba<br>
+            <i class="fas fa-phone-alt" style="color: var(--primary-orange); margin-right: 6px;"></i> <a href="tel:+2348055543555" style="color: white; text-decoration: underline;">+234 805 554 3555</a><br>
+            <i class="fas fa-envelope" style="color: var(--primary-orange); margin-right: 6px;"></i> <a href="mailto:info@letsbuildthechild.org" style="color: white; text-decoration: underline;">info@letsbuildthechild.org</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Let's Build The Child Foundation. All Rights Reserved.</div>
+        <div>Nurturing Character • Empowering Academics • Building Leaders</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Modal Popup -->
+  <div class="modal-backdrop" id="applicationModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div style="margin-bottom: 24px;">
+        <span class="section-label">SCHOLARSHIP APPLICATION</span>
+        <h3 id="modalProgramTitle">General Scholarship Application</h3>
+        <p style="color: var(--neutral-slate); font-size: 0.9rem; margin-top: 4px;">
+          Please complete your preliminary information. High academic standing & verified financial need are required.
+        </p>
+      </div>
+
+      <form id="modalApplicationForm">
+        <div class="form-group">
+          <label class="form-label" for="modalFullName">Full Name (Surname First)</label>
+          <input type="text" id="modalFullName" class="form-control" placeholder="e.g. Okonjo Chidubem David" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalEmail">Email Address</label>
+          <input type="email" id="modalEmail" class="form-control" placeholder="e.g. chidubem@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalPhone">Phone Number (WhatsApp Preferred)</label>
+          <input type="tel" id="modalPhone" class="form-control" placeholder="e.g. +234 803 123 4567" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalProgramSelect">Scholarship Pathway</label>
+          <select id="modalProgramSelect" class="form-control" required>
+            <option value="">Select Scholarship Program</option>
+            <option value="Freshers">Freshers Scholarship (Newly Admitted)</option>
+            <option value="Returning">Returning Students Renewal (CGPA >= 3.50)</option>
+            <option value="UTME">UTME Financial Aid</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalInstitution">Institution Name</label>
+          <input type="text" id="modalInstitution" class="form-control" placeholder="e.g. University of Lagos (UNILAG) / DELSU" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalStatement">Brief Statement of Need & Merit (100–200 words)</label>
+          <textarea id="modalStatement" class="form-control" style="min-height: 100px;" placeholder="Tell us about your academic goals and financial background..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>
