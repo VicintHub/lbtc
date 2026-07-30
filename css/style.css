@@ -1278,7 +1278,7 @@ textarea.form-control {
 .footer-links a:hover { color: var(--primary-orange); }
 
 .social-links {
-  display: flex;
+  display: none !important;
   gap: 12px;
   margin-top: 20px;
 }
