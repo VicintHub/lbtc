@@ -1,12 +1,16 @@
+<!-- NOTE: Server-level clean URL rewrite configuration (e.g., Vercel vercel.json rewrites or Apache .htaccess) required at deploy time to resolve clean slugs (/about, /programs, /contact) to underlying .html files. -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NG">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Let's Build The Child Foundation | Nigerian Undergraduate Scholarships & Student Empowerment</title>
   <meta name="description"
-    content="Let's Build The Child Foundation (LBTC) is a Nigerian non-profit foundation providing undergraduate scholarships, character development, and skills acquisition to underprivileged, academically strong students across Nigeria.">
+    content="Let's Build The Child Foundation (LBTC) is a Nigerian non-profit foundation providing undergraduate scholarships, character development, and skills acquisition to underprivileged, academically strong students in accredited Nigerian public tertiary institutions.">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://www.letsbuildthechild.org">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
@@ -74,9 +78,9 @@
   <!-- Main Navigation Header -->
   <header class="site-header">
     <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="LBTC Foundation Home">
+      <a href="/" class="brand-logo" aria-label="LBTC Foundation Home">
         <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png"
-          alt="Let's Build The Child Foundation Logo">
+          alt="Let's Build The Child Foundation Official Emblem Logo">
         <div class="brand-text">
           <span class="brand-name">LET'S BUILD THE CHILD</span>
           <span class="brand-tagline">FOUNDATION</span>
@@ -85,11 +89,11 @@
 
       <!-- Desktop Nav -->
       <nav class="nav-menu">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About Us</a>
-        <a href="programs.html" class="nav-link">Scholarship Programs</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
-        <a href="programs.html" class="btn btn-primary btn-sm trigger-apply-modal"
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/about" class="nav-link">About Us</a>
+        <a href="/programs" class="nav-link">Scholarship Programs</a>
+        <a href="/contact" class="nav-link">Contact Us</a>
+        <a href="/programs" class="btn btn-primary btn-sm trigger-apply-modal"
           data-program="General Scholarship">Apply for Scholarship</a>
       </nav>
 
@@ -106,19 +110,19 @@
     <div class="drawer-header">
       <div class="brand-logo">
         <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png"
-          alt="LBTC Logo" style="height: 40px;">
+          alt="LBTC Foundation Brand Icon" style="height: 40px;">
         <span class="brand-name" style="font-size: 1rem;">LBTC FOUNDATION</span>
       </div>
       <button class="drawer-close" id="mobileDrawerClose" aria-label="Close Menu"><i class="fas fa-times"></i></button>
     </div>
     <div class="drawer-links">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="about.html" class="nav-link">About Us</a>
-      <a href="programs.html" class="nav-link">Scholarship Programs</a>
-      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="/" class="nav-link active">Home</a>
+      <a href="/about" class="nav-link">About Us</a>
+      <a href="/programs" class="nav-link">Scholarship Programs</a>
+      <a href="/contact" class="nav-link">Contact Us</a>
     </div>
     <div style="margin-top: auto;">
-      <a href="programs.html" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;"
+      <a href="/programs" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;"
         data-program="Mobile General Application">Apply for Scholarship</a>
     </div>
   </div>
@@ -141,11 +145,11 @@
             financial background.
           </p>
           <div class="hero-cta-group">
-            <a href="programs.html" class="btn btn-primary trigger-apply-modal"
+            <a href="/programs" class="btn btn-primary trigger-apply-modal"
               data-program="Hero Scholarship Application">
               Apply for Scholarship <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="about.html" class="btn btn-outline-blue">
+            <a href="/about" class="btn btn-outline-blue">
               Discover Our Story
             </a>
           </div>
@@ -154,7 +158,7 @@
         <div style="position: relative;">
           <div class="hero-image-clean">
             <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785274590/hero_image_final_1_new_gagb31.png"
-              alt="Let's Build The Child Foundation Scholars">
+              alt="Empowered Nigerian university undergraduate students studying together">
           </div>
           <div
             style="position: absolute; bottom: 20px; left: -20px; background: var(--bg-white); padding: 20px 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 16px; border-left: 5px solid var(--primary-orange); max-width: 320px; z-index: 2;">
@@ -210,8 +214,8 @@
           </p>
 
           <div style="margin-top: 28px;">
-            <a href="about.html" class="btn btn-primary">
-              Learn More <i class="fas fa-arrow-right"></i>
+            <a href="/about" class="btn btn-primary">
+              Learn More About Our Mission <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -219,7 +223,7 @@
         <div>
           <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
             <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785274866/6007_vhowfo.jpg"
-              alt="Nigerian university student studying diligently"
+              alt="Undergraduate student in Nigeria studying with textbooks and notebook"
               style="height: 100%; min-height: 440px; width: 100%; object-fit: cover;">
           </div>
         </div>
@@ -345,7 +349,7 @@
           <div class="pathway-card-img">
             <img
               src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785278674/25651-30412c-o-student-reading-facebook-1-1062x598_txh4z1.jpg"
-              alt="Freshers Scholarship">
+              alt="Newly admitted 100 level undergraduate student receiving academic scholarship support">
           </div>
           <div style="padding: 28px 28px 20px; flex-grow: 1;">
             <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Freshers Scholarship</h3>
@@ -356,7 +360,7 @@
           <div
             style="padding: 20px 28px; background: var(--bg-warm); border-top: 1px solid var(--neutral-border); display: flex; align-items: center; justify-content: space-between;">
             <span style="font-weight: 700; font-size: 0.85rem; color: var(--neutral-slate);">Status: Open Cycle</span>
-            <a href="programs.html#freshers-program" class="btn btn-outline-blue btn-sm">View Details</a>
+            <a href="/programs#freshers-program" class="btn btn-outline-blue btn-sm">View Freshers Scholarship Details</a>
           </div>
         </div>
 
@@ -364,7 +368,7 @@
         <div class="pathway-card-item">
           <div class="pathway-card-img">
             <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785278610/44983_g7fvhp.jpg"
-              alt="Returning Students Renewal">
+              alt="Continuing university student reading in library for CGPA scholarship renewal">
           </div>
           <div style="padding: 28px 28px 20px; flex-grow: 1;">
             <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Returning Students Renewal</h3>
@@ -376,7 +380,7 @@
             style="padding: 20px 28px; background: var(--bg-warm); border-top: 1px solid var(--neutral-border); display: flex; align-items: center; justify-content: space-between;">
             <span style="font-weight: 700; font-size: 0.85rem; color: var(--neutral-slate);">Status: Annual
               Renewal</span>
-            <a href="programs.html#returning-program" class="btn btn-outline-blue btn-sm">View Details</a>
+            <a href="/programs#returning-program" class="btn btn-outline-blue btn-sm">View Returning Students Renewal Details</a>
           </div>
         </div>
 
@@ -384,7 +388,7 @@
         <div class="pathway-card-item">
           <div class="pathway-card-img">
             <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785279038/jamb_myawbf.jpg"
-              alt="UTME Financial Aid">
+              alt="Secondary school graduate preparing for UTME JAMB matriculation examination">
           </div>
           <div style="padding: 28px 28px 20px; flex-grow: 1;">
             <h3 style="font-size: 1.5rem; margin-bottom: 10px;">UTME Financial Aid</h3>
@@ -396,7 +400,7 @@
             style="padding: 20px 28px; background: var(--bg-warm); border-top: 1px solid var(--neutral-border); display: flex; align-items: center; justify-content: space-between;">
             <span style="font-weight: 700; font-size: 0.85rem; color: var(--neutral-slate);">Status: Pre-JAMB
               Window</span>
-            <a href="programs.html#utme-program" class="btn btn-outline-blue btn-sm">View Details</a>
+            <a href="/programs#utme-program" class="btn btn-outline-blue btn-sm">View UTME Financial Aid Details</a>
           </div>
         </div>
       </div>
@@ -409,9 +413,9 @@
       <div class="founders-split-grid">
         <div class="founders-image-duo">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-13-24_omignx.jpg"
-            alt="Sir Itiako Ikpokpo, KSM">
+            alt="Sir Itiako Ikpokpo, KSM - President of Let's Build The Child Foundation">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785142930/PHOTO-2026-07-26-13-12-46_azobm5.jpg"
-            alt="Lady Peikumor Ikpokpo, KSM">
+            alt="Lady Peikumor Ikpokpo, KSM - Vice-President of Let's Build The Child Foundation">
         </div>
 
         <div class="founders-content">
@@ -423,8 +427,8 @@
             supporting their academics, and equipping them with life skills, we are laying the foundation for a stronger
             nation."
           </p>
-          <a href="about.html" class="btn btn-primary btn-sm">
-            Read Full Story <i class="fas fa-arrow-right"></i>
+          <a href="/about" class="btn btn-primary btn-sm">
+            Read Full Leadership Story <i class="fas fa-arrow-right"></i>
           </a>
         </div>
       </div>
@@ -440,7 +444,7 @@
         If you have the grades, the drive, and the dream; we're here to help you get there. Applications for our
         scholarship and financial aid programmes are open now.
       </p>
-      <a href="programs.html" class="btn btn-primary">
+      <a href="/programs" class="btn btn-primary">
         Apply for Scholarship <i class="fas fa-arrow-right"></i>
       </a>
     </div>
@@ -453,7 +457,7 @@
         <div class="footer-brand">
           <div class="brand-logo">
             <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png"
-              alt="LBTC Foundation Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
+              alt="Let's Build The Child Foundation Official Emblem Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
             <div class="brand-text">
               <span class="brand-name" style="color: white;">LET'S BUILD THE CHILD</span>
               <span class="brand-tagline" style="color: var(--primary-orange);">FOUNDATION</span>
@@ -463,6 +467,7 @@
             A visionary non-profit foundation established by Sir Itiako & Lady Peikumor Ikpokpo, KSM, committed to
             raising healthy, educated, empowered, and responsible leaders.
           </p>
+          <!-- Real social profile URLs to be added at go-live -->
           <div class="social-links" style="display: none;">
             <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -474,20 +479,20 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="programs.html">Scholarship Programs</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/programs">Scholarship Programs</a>
+            <a href="/contact">Contact Us</a>
           </div>
         </div>
 
         <div class="footer-col">
           <h4>Programs</h4>
           <div class="footer-links">
-            <a href="programs.html#freshers-program">Freshers Scholarship</a>
-            <a href="programs.html#returning-program">Returning Students Renewal</a>
-            <a href="programs.html#utme-program">UTME Financial Aid</a>
-            <a href="about.html#core-values">Character Development</a>
+            <a href="/programs#freshers-program">Freshers Scholarship</a>
+            <a href="/programs#returning-program">Returning Students Renewal</a>
+            <a href="/programs#utme-program">UTME Financial Aid</a>
+            <a href="/about#core-values">Character Development</a>
           </div>
         </div>
 

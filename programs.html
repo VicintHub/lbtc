@@ -1,11 +1,15 @@
+<!-- NOTE: Server-level clean URL rewrite configuration (e.g., Vercel vercel.json rewrites or Apache .htaccess) required at deploy time to resolve clean slugs (/about, /programs, /contact) to underlying .html files. -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NG">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scholarships & Support Programmes | Let's Build The Child Foundation</title>
   <meta name="description" content="Explore our undergraduate scholarship pathways for Nigerian public university students: Freshers Scholarship, Returning Students Renewal, and UTME Financial Aid. View eligibility and document checklists.">
   
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://www.letsbuildthechild.org/programs">
+
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   
@@ -113,8 +117,8 @@
   <!-- Main Navigation Header -->
   <header class="site-header">
     <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="LBTC Foundation Home">
-        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png" alt="Let's Build The Child Foundation Logo">
+      <a href="/" class="brand-logo" aria-label="LBTC Foundation Home">
+        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png" alt="Let's Build The Child Foundation Official Emblem Logo">
         <div class="brand-text">
           <span class="brand-name">LET'S BUILD THE CHILD</span>
           <span class="brand-tagline">FOUNDATION</span>
@@ -123,11 +127,11 @@
 
       <!-- Desktop Nav -->
       <nav class="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About Us</a>
-        <a href="programs.html" class="nav-link active">Scholarship Programs</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
-        <a href="programs.html" class="btn btn-primary btn-sm trigger-apply-modal" data-program="General Scholarship">Apply for Scholarship</a>
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about" class="nav-link">About Us</a>
+        <a href="/programs" class="nav-link active">Scholarship Programs</a>
+        <a href="/contact" class="nav-link">Contact Us</a>
+        <a href="/programs" class="btn btn-primary btn-sm trigger-apply-modal" data-program="General Scholarship">Apply for Scholarship</a>
       </nav>
 
       <!-- Mobile Burger Button -->
@@ -142,19 +146,19 @@
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="drawer-header">
       <div class="brand-logo">
-        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png" alt="LBTC Logo" style="height: 40px;">
+        <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png" alt="LBTC Foundation Brand Icon" style="height: 40px;">
         <span class="brand-name" style="font-size: 1rem;">LBTC FOUNDATION</span>
       </div>
       <button class="drawer-close" id="mobileDrawerClose" aria-label="Close Menu"><i class="fas fa-times"></i></button>
     </div>
     <div class="drawer-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">About Us</a>
-      <a href="programs.html" class="nav-link active">Scholarship Programs</a>
-      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="/" class="nav-link">Home</a>
+      <a href="/about" class="nav-link">About Us</a>
+      <a href="/programs" class="nav-link active">Scholarship Programs</a>
+      <a href="/contact" class="nav-link">Contact Us</a>
     </div>
     <div style="margin-top: auto;">
-      <a href="programs.html" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;" data-program="Mobile General Application">Apply for Scholarship</a>
+      <a href="/programs" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;" data-program="Mobile General Application">Apply for Scholarship</a>
     </div>
   </div>
 
@@ -431,7 +435,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand-logo">
-            <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png" alt="LBTC Foundation Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
+            <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png" alt="Let's Build The Child Foundation Official Emblem Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
             <div class="brand-text">
               <span class="brand-name" style="color: white;">LET'S BUILD THE CHILD</span>
               <span class="brand-tagline" style="color: var(--primary-orange);">FOUNDATION</span>
@@ -440,6 +444,7 @@
           <p>
             A visionary non-profit foundation established by Sir Itiako & Lady Peikumor Ikpokpo, KSM, committed to raising healthy, educated, empowered, and responsible leaders.
           </p>
+          <!-- Real social profile URLs to be added at go-live -->
           <div class="social-links" style="display: none;">
             <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -451,20 +456,20 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="programs.html">Scholarship Programs</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/programs">Scholarship Programs</a>
+            <a href="/contact">Contact Us</a>
           </div>
         </div>
 
         <div class="footer-col">
           <h4>Programs</h4>
           <div class="footer-links">
-            <a href="programs.html#freshers-program">Freshers Scholarship</a>
-            <a href="programs.html#returning-program">Returning Students Renewal</a>
-            <a href="programs.html#utme-program">UTME Financial Aid</a>
-            <a href="about.html#core-values">Character Development</a>
+            <a href="/programs#freshers-program">Freshers Scholarship</a>
+            <a href="/programs#returning-program">Returning Students Renewal</a>
+            <a href="/programs#utme-program">UTME Financial Aid</a>
+            <a href="/about#core-values">Character Development</a>
           </div>
         </div>
 

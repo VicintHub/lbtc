@@ -1,5 +1,6 @@
+<!-- NOTE: Server-level clean URL rewrite configuration (e.g., Vercel vercel.json rewrites or Apache .htaccess) required at deploy time to resolve clean slugs (/about, /programs, /contact) to underlying .html files. -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NG">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +8,9 @@
   <title>About Us | Let's Build The Child Foundation</title>
   <meta name="description"
     content="Learn about Let's Build The Child Foundation, led by Sir Itiako and Lady Peikumor Ikpokpo, KSM. Discover our mission, vision, core values, ₦10M annual endowment, and our board of trustees.">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://www.letsbuildthechild.org/about">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
@@ -74,9 +78,9 @@
   <!-- Main Navigation Header -->
   <header class="site-header">
     <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="LBTC Foundation Home">
+      <a href="/" class="brand-logo" aria-label="LBTC Foundation Home">
         <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png"
-          alt="Let's Build The Child Foundation Logo">
+          alt="Let's Build The Child Foundation Official Emblem Logo">
         <div class="brand-text">
           <span class="brand-name">LET'S BUILD THE CHILD</span>
           <span class="brand-tagline">FOUNDATION</span>
@@ -85,11 +89,11 @@
 
       <!-- Desktop Nav -->
       <nav class="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link active">About Us</a>
-        <a href="programs.html" class="nav-link">Scholarship Programs</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
-        <a href="programs.html" class="btn btn-primary btn-sm trigger-apply-modal"
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about" class="nav-link active">About Us</a>
+        <a href="/programs" class="nav-link">Scholarship Programs</a>
+        <a href="/contact" class="nav-link">Contact Us</a>
+        <a href="/programs" class="btn btn-primary btn-sm trigger-apply-modal"
           data-program="General Scholarship">Apply for Scholarship</a>
       </nav>
 
@@ -106,19 +110,19 @@
     <div class="drawer-header">
       <div class="brand-logo">
         <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167493/android-chrome-192x192_ylpxje.png"
-          alt="LBTC Logo" style="height: 40px;">
+          alt="LBTC Foundation Brand Icon" style="height: 40px;">
         <span class="brand-name" style="font-size: 1rem;">LBTC FOUNDATION</span>
       </div>
       <button class="drawer-close" id="mobileDrawerClose" aria-label="Close Menu"><i class="fas fa-times"></i></button>
     </div>
     <div class="drawer-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link active">About Us</a>
-      <a href="programs.html" class="nav-link">Scholarship Programs</a>
-      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="/" class="nav-link">Home</a>
+      <a href="/about" class="nav-link active">About Us</a>
+      <a href="/programs" class="nav-link">Scholarship Programs</a>
+      <a href="/contact" class="nav-link">Contact Us</a>
     </div>
     <div style="margin-top: auto;">
-      <a href="programs.html" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;"
+      <a href="/programs" class="btn btn-primary trigger-apply-modal" style="width: 100%; text-align: center;"
         data-program="Mobile General Application">Apply for Scholarship</a>
     </div>
   </div>
@@ -188,7 +192,7 @@
 
         <div>
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785308970/about_us_image_mqfhqe.png"
-            alt="Let's Build The Child Foundation Scholars" style="width: 100%; height: auto; display: block;">
+            alt="Let's Build The Child Foundation leadership and scholars story narrative" style="width: 100%; height: auto; display: block;">
         </div>
       </div>
     </div>
@@ -218,75 +222,83 @@
           <p style="color: var(--neutral-slate); font-size: 1.05rem; line-height: 1.7;">
             To improve the lives of children through character development, education, healthcare, life skills
             acquisition, empowerment, and opportunity creation across public tertiary institutions and local communities
-            in Nigeria.
+            throughout Nigeria.
           </p>
         </div>
       </div>
 
-      <!-- Core Values -->
-      <div id="core-values" style="margin-top: 64px;">
-        <div class="text-center" style="margin-bottom: 40px;">
-          <span class="section-label label-green">WHAT DEFINES US</span>
-          <h2>Our 7 Core Values</h2>
+      <!-- Core Values Grid -->
+  <section class="section-padding" id="core-values" style="background-color: var(--bg-sky);">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 760px; margin-bottom: 48px;">
+        <span class="section-label">THE ETHICAL PILLARS</span>
+        <h2>Our 7 Core Values</h2>
+        <p class="lead-text mx-auto" style="margin-top: 12px;">
+          The principles that govern our decisions, programs, and relationships with scholars and partners.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(29, 95, 214, 0.1); color: var(--primary-blue); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Love</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); line-height: 1.5;">Compelled by deep love for children and belief in their inherent worth.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
-          <div
-            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
-            <i class="fas fa-heart" style="font-size: 1.75rem; color: #E11D48; margin-bottom: 12px;"></i>
-            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Love</h4>
-            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Unconditional care & empathy</span>
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(16, 185, 129, 0.1); color: var(--secondary-green-dark); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+            <i class="fas fa-shield-alt"></i>
           </div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Integrity</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); line-height: 1.5;">Operating with unyielding ethical standards and transparency.</p>
+        </div>
 
-          <div
-            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
-            <i class="fas fa-shield-alt"
-              style="font-size: 1.75rem; color: var(--primary-blue); margin-bottom: 12px;"></i>
-            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Integrity</h4>
-            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Uncompromising ethical standards</span>
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(245, 158, 11, 0.1); color: var(--primary-orange); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+            <i class="fas fa-award"></i>
           </div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Excellence</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); line-height: 1.5;">Striving for the highest quality in scholarship awards and programs.</p>
+        </div>
 
-          <div
-            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
-            <i class="fas fa-star" style="font-size: 1.75rem; color: var(--primary-orange); margin-bottom: 12px;"></i>
-            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Excellence</h4>
-            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Peak academic & moral rigor</span>
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(217, 119, 6, 0.1); color: #D97706; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+            <i class="fas fa-hands-helping"></i>
           </div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Compassion</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); line-height: 1.5;">Serving indigent families with empathy, dignity, and care.</p>
+        </div>
 
-          <div
-            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
-            <i class="fas fa-hands-helping"
-              style="font-size: 1.75rem; color: var(--secondary-green-dark); margin-bottom: 12px;"></i>
-            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Compassion</h4>
-            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Serving vulnerable youth</span>
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(15, 23, 42, 0.1); color: var(--neutral-ink); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+            <i class="fas fa-balance-scale"></i>
           </div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Accountability</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); line-height: 1.5;">Responsible stewardship of all financial resources and trust.</p>
+        </div>
 
-          <div
-            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
-            <i class="fas fa-balance-scale" style="font-size: 1.75rem; color: #7C3AED; margin-bottom: 12px;"></i>
-            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Accountability</h4>
-            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Transparent stewardship</span>
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(29, 95, 214, 0.1); color: var(--primary-blue); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+            <i class="fas fa-bullseye"></i>
           </div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Intentionality</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); line-height: 1.5;">Designing strategic initiatives that yield measurable impact.</p>
+        </div>
 
-          <div
-            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
-            <i class="fas fa-bullseye" style="font-size: 1.75rem; color: #2563EB; margin-bottom: 12px;"></i>
-            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Intentionality</h4>
-            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Purpose-driven mentoring</span>
+        <div style="background: var(--bg-white); padding: 32px 24px; border-radius: var(--radius-md); border: 1px solid var(--neutral-border);">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(16, 185, 129, 0.1); color: var(--secondary-green-dark); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+            <i class="fas fa-users"></i>
           </div>
-
-          <div
-            style="padding: 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--neutral-border); text-align: center;">
-            <i class="fas fa-users" style="font-size: 1.75rem; color: #D97706; margin-bottom: 12px;"></i>
-            <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Inclusion</h4>
-            <span style="font-size: 0.85rem; color: var(--neutral-slate);">Equal access for every background</span>
-          </div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Inclusion</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-slate); line-height: 1.5;">Equal access to opportunity regardless of gender or state background.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Foundation Leadership Spotlight -->
+  <!-- Leadership Bio Feature -->
   <section class="section-padding" id="leadership-team" style="background-color: var(--bg-white);">
     <div class="container">
       <div class="text-center mx-auto" style="max-width: 760px; margin-bottom: 48px;">
@@ -297,7 +309,7 @@
       <div class="story-layout-grid">
         <div style="display: flex; flex-direction: column; gap: 24px;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-13-24_omignx.jpg"
-            alt="Sir Itiako Ikpokpo, KSM"
+            alt="Sir Itiako Ikpokpo, KSM - President of Let's Build The Child Foundation"
             style="border-radius: var(--radius-md); height: 380px; width: 100%; object-fit: cover; object-position: center 20%;">
           <div>
             <span
@@ -312,7 +324,7 @@
 
         <div style="display: flex; flex-direction: column; gap: 24px;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785142930/PHOTO-2026-07-26-13-12-46_azobm5.jpg"
-            alt="Lady Peikumor Ikpokpo, KSM"
+            alt="Lady Peikumor Ikpokpo, KSM - Vice-President of Let's Build The Child Foundation"
             style="border-radius: var(--radius-md); height: 380px; width: 100%; object-fit: cover; object-position: center 20%;">
           <div>
             <span
@@ -344,7 +356,7 @@
         <div
           style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-13-24_omignx.jpg"
-            alt="Sir Itiako Ikpokpo, KSM"
+            alt="Sir Itiako Ikpokpo, KSM - President"
             style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
           <div style="padding: 20px;">
             <h4>Sir Itiako Ikpokpo, KSM</h4>
@@ -359,7 +371,7 @@
         <div
           style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785142930/PHOTO-2026-07-26-13-12-46_azobm5.jpg"
-            alt="Lady Peikumor Ikpokpo, KSM"
+            alt="Lady Peikumor Ikpokpo, KSM - Vice-President"
             style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
           <div style="padding: 20px;">
             <h4>Lady Peikumor Ikpokpo, KSM</h4>
@@ -371,7 +383,7 @@
         <div
           style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-43-55_x4ocij.jpg"
-            alt="Yole Itiako-Ikpokpo"
+            alt="Yole Itiako-Ikpokpo - Board Member"
             style="width: 100%; height: 280px; object-fit: cover; object-position: center 30%;">
           <div style="padding: 20px;">
             <h4>Yole Itiako-Ikpokpo</h4>
@@ -383,7 +395,7 @@
         <div
           style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-14-27_d341sy.jpg"
-            alt="Uteno Young Igbehen" style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
+            alt="Uteno Young Igbehen - Board Member" style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
           <div style="padding: 20px;">
             <h4>Uteno Young Igbehen</h4>
             <span style="font-size: 0.85rem; color: var(--neutral-slate); font-weight: 700;">Member</span>
@@ -394,7 +406,7 @@
         <div
           style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141323/PHOTO-2026-07-26-13-24-46_h7swgu.jpg"
-            alt="Mrs. Dorothy Stephens Ajiri Obi" style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
+            alt="Mrs. Dorothy Stephens Ajiri Obi - Board Member" style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
           <div style="padding: 20px;">
             <h4>Mrs. Dorothy Stephens Ajiri Obi</h4>
             <span style="font-size: 0.85rem; color: var(--neutral-slate); font-weight: 700;">Member</span>
@@ -405,7 +417,7 @@
         <div
           style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785141320/PHOTO-2026-07-26-13-15-06_grncxy.jpg"
-            alt="Darlington Ofekeze"
+            alt="Darlington Ofekeze - Board Member"
             style="width: 100%; height: 280px; object-fit: cover; object-position: center top;">
           <div style="padding: 20px;">
             <h4>Darlington Ofekeze</h4>
@@ -417,7 +429,7 @@
         <div
           style="background: var(--bg-white); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--neutral-border); text-align: center;">
           <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785377809/PHOTO-2026-07-29-19-08-35_2_al5ovo.jpg"
-            alt="IGBIGBISIE, O. Emmanuel Ph.D"
+            alt="IGBIGBISIE, O. Emmanuel Ph.D - Board Member"
             style="width: 100%; height: 280px; object-fit: cover; object-position: center 30%;">
           <div style="padding: 20px;">
             <h4>IGBIGBISIE, O. Emmanuel Ph.D</h4>
@@ -436,7 +448,7 @@
         If you have the grades, the drive, and the dream; we're here to help you get there. Applications for our
         scholarship and financial aid programmes are open now.
       </p>
-      <a href="programs.html" class="btn btn-primary">
+      <a href="/programs" class="btn btn-primary">
         Apply for Scholarship <i class="fas fa-arrow-right"></i>
       </a>
     </div>
@@ -449,7 +461,7 @@
         <div class="footer-brand">
           <div class="brand-logo">
             <img src="https://res.cloudinary.com/pwkdspnn/image/upload/v1785167531/logo-2048x2048-hires_b4ex34.png"
-              alt="LBTC Foundation Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
+              alt="Let's Build The Child Foundation Official Emblem Logo" style="height: 48px; background: white; border-radius: 8px; padding: 4px;">
             <div class="brand-text">
               <span class="brand-name" style="color: white;">LET'S BUILD THE CHILD</span>
               <span class="brand-tagline" style="color: var(--primary-orange);">FOUNDATION</span>
@@ -459,6 +471,7 @@
             A visionary non-profit foundation established by Sir Itiako & Lady Peikumor Ikpokpo, KSM, committed to
             raising healthy, educated, empowered, and responsible leaders.
           </p>
+          <!-- Real social profile URLs to be added at go-live -->
           <div class="social-links" style="display: none;">
             <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -470,20 +483,20 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="programs.html">Scholarship Programs</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/programs">Scholarship Programs</a>
+            <a href="/contact">Contact Us</a>
           </div>
         </div>
 
         <div class="footer-col">
           <h4>Programs</h4>
           <div class="footer-links">
-            <a href="programs.html#freshers-program">Freshers Scholarship</a>
-            <a href="programs.html#returning-program">Returning Students Renewal</a>
-            <a href="programs.html#utme-program">UTME Financial Aid</a>
-            <a href="about.html#core-values">Character Development</a>
+            <a href="/programs#freshers-program">Freshers Scholarship</a>
+            <a href="/programs#returning-program">Returning Students Renewal</a>
+            <a href="/programs#utme-program">UTME Financial Aid</a>
+            <a href="/about#core-values">Character Development</a>
           </div>
         </div>
 
